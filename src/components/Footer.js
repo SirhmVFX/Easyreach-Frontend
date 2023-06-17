@@ -1,6 +1,8 @@
 import React from "react";
 import '../Easy.css';
 import Qrcode from "../images/Qrcode.png";
+import Playtore from "../images/Playtore.png";
+import Appstore from "../images/Appstore.png";
 
 const Footer = () => {
   return (
@@ -87,12 +89,12 @@ const Footer = () => {
               <div>
                 <img
                   className="gog"
-                  src="/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logosrc.png"
+                  src={Playtore}
                   alt=""
                 />
                 <img
                   className="gog"
-                  src="/download-appstoresrc.png"
+                  src={Appstore}
                   alt=""
                 />
               </div>
