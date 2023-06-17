@@ -1,5 +1,6 @@
 import React from "react";
 import '../Easy.css';
+import Qrcode from "../images/Qrcode.png";
 
 const Footer = () => {
   return (
@@ -81,7 +82,7 @@ const Footer = () => {
             <p>Save $3 with App New User Only</p>
 
             <div className="src-code">
-              <img className="gogl" src="/Qrcode 1src.png" alt="" />
+              <img className="gogl" src={Qrcode} alt="" />
 
               <div>
                 <img
