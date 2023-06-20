@@ -30,7 +30,7 @@ export const signup =
       });
 
       dispatch({ type: USER_SIGNUP_SUCCESS, payload: data });
-      localStorage.setItem("flowdayUser", JSON.stringify(data));
+      localStorage.setItem("easyreachUser", JSON.stringify(data));
     } catch (error) {
       dispatch({
         type: USER_SIGNUP_FAIL,
@@ -52,8 +52,8 @@ export const signup =
       });
   
       dispatch({ type: USER_SIGNIN_SUCCESS, payload: data });
-      localStorage.setItem("flowdayUserAuth", JSON.stringify(data));
-      localStorage.removeItem("flowdayUser");
+      localStorage.setItem("easyreachUser", JSON.stringify(data));
+      localStorage.removeItem("easyreachUser");
     } catch (error) {
       dispatch({
         type: USER_SIGNIN_FAIL,
