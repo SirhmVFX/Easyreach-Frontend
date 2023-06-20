@@ -18,14 +18,23 @@ const Register = () => {
           </div>
 
           <div>
-            <form className="login-form" action="#" method="POST">
+            <form className="login-form">
               <h3>Create an account</h3>
               <p className="margin-bottom">Enter your details below</p>
 
               <div className="form-fields margin-bottom">
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email Address" />
-                <input type="password" placeholder="Password" />
+                <input
+                 type="text" 
+                 placeholder="Name" 
+                 />
+                <input 
+                type="email" 
+                placeholder="Email Address" 
+                />
+                <input 
+                type="password" 
+                placeholder="Password" 
+                />
               </div>
 
               <div className="btn-sect">

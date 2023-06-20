@@ -66,16 +66,17 @@ const Login = () => {
           </div>
 
           <div>
-            <form className="login-form" action="#" method="POST">
+            <form className="login-form">
               <h3>Log in to Exclusive</h3>
               <p className="margin-bottom">Enter your details below</p>
 
               <div className="form-fields">
-                <input 
-                type="text" 
+                <input
+                type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter Email" />
+                placeholder={"Valid email required"} 
+                />
                 <input 
                 type="password"
                 value={password}
