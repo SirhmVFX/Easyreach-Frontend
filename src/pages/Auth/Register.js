@@ -21,7 +21,7 @@ const Register = () => {
   const userDetails = useSelector((state) => state.signInInfo.userInfo);
   useEffect(() => {
     if (userDetails) {
-      navigate("/overview");
+      navigate("/");
     }
   }, [navigate, userDetails]);
 
@@ -49,7 +49,7 @@ const Register = () => {
     // if (!isMount) {
     if (signUpInfoState.userInfo) {
       success("Sign Up Successful");
-      navigate("/verify-signup");
+      navigate("/");
     }
   }, [signUpInfoState.userInfo, navigate, isMount]);
 
@@ -83,7 +83,7 @@ const Register = () => {
 
           <div>
             <form className="login-form"
-            onSubmit={(e) => handleSubmit(e)}
+              onSubmit={(e) => handleSubmit(e)}
             >
               <h3>Create an account</h3>
               <p className="margin-bottom">Enter your details below</p>
@@ -93,7 +93,7 @@ const Register = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Name"
+                  placeholder="Full Name"
                 />
                 <input
                   type="text"
@@ -123,9 +123,9 @@ const Register = () => {
 
               <div className="btn-sect">
                 <button className="button1"
-                disabled={signUpInfoState?.loading}
+                  disabled={signUpInfoState?.loading}
                 >
-                {signUpInfoState.loading ? "Hold On ..." : "Sign Up"}
+                  {signUpInfoState.loading ? "Hold On ..." : "Sign Up"}
                 </button>
               </div>
             </form>
