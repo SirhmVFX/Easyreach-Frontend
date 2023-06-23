@@ -11,20 +11,19 @@ import {
 } from "../constants/authConstants";
 
 export const signup =
-  (username, email, firstName, lastName, password, phone) =>
+  (username, email, name, password, phone) =>
   async (dispatch) => {
     dispatch({ type: USER_SIGNUP_FAIL, payload: null });
     dispatch({
       type: USER_SIGNUP_REQUEST,
-      payload: { username, email, firstName, lastName, password },
+      payload: { username, email, name, lastName, password },
     });
 
     try {
       const { data } = await axios.post(`${env.apiUrl}/user/sign-up`, {
         username,
         email,
-        firstName,
-        lastName,
+        name,
         password,
         phone,
       });
