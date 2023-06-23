@@ -1,6 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
-import rootReducer from "./reducers";
+import { combineReducers, compose } from "redux";
+
+import { signinReducer, signupReducer } from "./reducers/authReducers";
 
 const initialState = {
   signInInfo: {
@@ -10,11 +12,17 @@ const initialState = {
   },
 };
 
+const reducers = combineReducers({
+  signInInfo: signinReducer,
+  signUpInfo: signupReducer,
+});
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = configureStore({
-  reducer: rootReducer,
+  reducer: reducers,
   preloadedState: initialState,
   middleware: [thunk],
-  devTools: process.env.NODE_ENV !== "production",
+  enhancers: composeEnhancers,
 });
 
 export default store;

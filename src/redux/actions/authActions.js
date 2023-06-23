@@ -66,7 +66,6 @@ export const signup =
   };
 
   export const signout = () => async (dispatch) => {
-    // await axios.post(`${env.apiUrl}/auth/logout`);
     localStorage.removeItem("easyreachUser");
     dispatch({ type: USER_SIGNOUT });
     dispatch({ type: USER_SIGNIN_SUCCESS, payload: null });

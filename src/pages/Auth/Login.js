@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { useIsMount } from "../../hooks/useIsMount";
-import '../../Easy.css';
+import "../../Easy.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Regicon from "../../images/Regicon.png";
@@ -19,16 +19,19 @@ const Login = () => {
   const signInInfoState = useSelector((state) => state.signInInfo);
   const dispatch = useDispatch();
   const userDetails = useSelector((state) => state.signInInfo.userInfo);
+
   useEffect(() => {
     if (userDetails) {
       navigate("/");
     }
   }, [navigate, userDetails]);
+
   const errorExists = (error) => {
     return toast.error(error, {
       position: toast.POSITION.TOP_CENTER,
     });
   };
+
   const success = (message) => {
     return toast.success(message, {
       position: toast.POSITION.TOP_CENTER,
@@ -40,11 +43,12 @@ const Login = () => {
       if (signInInfoState.error) {
         errorExists(signInInfoState.error);
       } else if (signInInfoState.userInfo) {
-        success("Sign In Successfull");
+        success("Sign In Successful");
         navigate("/");
       }
     }
   }, [signInInfoState, navigate, isMount]);
+
   const handleClick = (e) => {
     e.preventDefault();
     if (email === "" || password === "") {
@@ -53,6 +57,7 @@ const Login = () => {
       dispatch(signIn(email, password));
     }
   };
+
   return (
     <>
       <Header />
@@ -72,25 +77,26 @@ const Login = () => {
 
               <div className="form-fields">
                 <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder={"Valid email required"} 
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Valid email required"
                 />
-                <input 
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter Password" />
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Enter Password"
+                />
               </div>
 
               <div className="btn-sect">
-                <button 
-                className="button1"
-                onClick={(e) => handleClick(e)}
-                disabled={signInInfoState?.loading}
+                <button
+                  className="button1"
+                  onClick={(e) => handleClick(e)}
+                  disabled={signInInfoState?.loading}
                 >
-                {signInInfoState?.loading ? "Hold On..." : "Log In"}
+                  {signInInfoState?.loading ? "Hold On..." : "Log In"}
                 </button>
                 <p className="color1">Forget password?</p>
               </div>
