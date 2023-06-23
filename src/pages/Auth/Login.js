@@ -40,25 +40,24 @@ const Login = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("Button clicked");
     if (email === "" || password === "") {
       errorExists("Kindly fill all fields!");
     } else {
       dispatch(signIn(email, password));
     }
   };
-
+  
   useEffect(() => {
+    console.log("useEffect triggered");
     if (!isMount) {
       if (signInInfoState.error) {
         errorExists(signInInfoState.error);
       } else if (signInInfoState.userInfo) {
         success("Sign In Successful");
-        navigate("/signup");
+        navigate("/");
       }
     }
-  }, [signInInfoState, navigate, isMount]);
-
+  }, [signInInfoState, navigate, isMount]);  
   return (
     <>{" "}
       <Header />
