@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "../../Easy.css";
 import JBL from "../../images/JBL.png";
 

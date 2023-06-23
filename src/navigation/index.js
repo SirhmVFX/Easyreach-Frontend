@@ -9,12 +9,12 @@ function Navigation() {
         <div className="Navigation">
             <main className="">
                 <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Homepage />} />
-                    <Route path="/signup" element={<Register />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/wishlist" element={<Wishlist />} />
-                </Routes>
+                    <Routes>
+                        <Route path="/" element={<Homepage />} />
+                        <Route path="/signup" element={<Register />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/wishlist" element={<Wishlist />} />
+                    </Routes>
                 </BrowserRouter>
             </main>
         </div>

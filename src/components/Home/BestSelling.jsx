@@ -1,11 +1,15 @@
 import "../../Easy.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faStar,
+  faHeart,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
 import LightNorth from "../../images/LightNorth.png";
 import LightGucci from "../../images/LightGucci.png";
 import gammaxx from "../../images/gammaxx.png";
 import sam from "../../images/sam.png";
-import React from 'react';
+import React from "react";
 
 const BestSelling = () => {
   return (
@@ -26,11 +30,7 @@ const BestSelling = () => {
           </div>
 
           <div className="ty">
-            <img
-              className="prd-img"
-              src={LightNorth}
-              alt=""
-            />
+            <img className="prd-img" src={LightNorth} alt="" />
           </div>
 
           <div className="prd-details">
@@ -66,11 +66,7 @@ const BestSelling = () => {
           </div>
 
           <div className="ty">
-            <img
-              className="prd-img"
-              src={LightGucci}
-              alt=""
-            />
+            <img className="prd-img" src={LightGucci} alt="" />
           </div>
 
           <div className="prd-details">
@@ -106,11 +102,7 @@ const BestSelling = () => {
           </div>
 
           <div className="ty">
-            <img
-              className="prd-img"
-              src={gammaxx}
-              alt=""
-            />
+            <img className="prd-img" src={gammaxx} alt="" />
           </div>
           <div className="prd-details">
             <p>IPS LCD Gaming Monitor</p>
@@ -146,11 +138,7 @@ const BestSelling = () => {
           </div>
 
           <div className="ty">
-            <img
-              className="prd-img"
-              src={sam}
-              alt=""
-            />
+            <img className="prd-img" src={sam} alt="" />
           </div>
 
           <div className="prd-details">

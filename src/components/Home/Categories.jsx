@@ -1,7 +1,14 @@
-import React from 'react';
+import React from "react";
 import "../../Easy.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faLaptop, faClock, faCamera, faHeadphones, faGamepad } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMobile,
+  faLaptop,
+  faClock,
+  faCamera,
+  faHeadphones,
+  faGamepad,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Categories = () => {
   return (

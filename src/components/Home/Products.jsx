@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "../../Easy.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -300,7 +300,6 @@ const ProductList = () => {
             <button className="button4 mg-tp">Add to cart</button>
           </div>
         </div>
-        
       </div>
     </section>
   );

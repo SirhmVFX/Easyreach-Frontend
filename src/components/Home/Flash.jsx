@@ -66,11 +66,7 @@ const FlashSales = () => {
           </div>
 
           <div className="ty">
-            <img
-              className="prd-img"
-              src={Akprod}
-              alt=""
-            />
+            <img className="prd-img" src={Akprod} alt="" />
           </div>
 
           <div className="prd-details">
