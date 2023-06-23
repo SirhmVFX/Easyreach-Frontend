@@ -38,19 +38,9 @@ const Login = () => {
     });
   };
 
-  useEffect(() => {
-    if (!isMount) {
-      if (signInInfoState.error) {
-        errorExists(signInInfoState.error);
-      } else if (signInInfoState.userInfo) {
-        success("Sign In Successful");
-        navigate("/");
-      }
-    }
-  }, [signInInfoState, navigate, isMount]);
-
   const handleClick = (e) => {
     e.preventDefault();
+    console.log("Button clicked");
     if (email === "" || password === "") {
       errorExists("Kindly fill all fields!");
     } else {
@@ -58,8 +48,19 @@ const Login = () => {
     }
   };
 
+  useEffect(() => {
+    if (!isMount) {
+      if (signInInfoState.error) {
+        errorExists(signInInfoState.error);
+      } else if (signInInfoState.userInfo) {
+        success("Sign In Successful");
+        navigate("/signup");
+      }
+    }
+  }, [signInInfoState, navigate, isMount]);
+
   return (
-    <>
+    <>{" "}
       <Header />
 
       <main>
@@ -80,7 +81,7 @@ const Login = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Valid email required"
+                  placeholder={"Valid email required"}
                 />
                 <input
                   type="password"

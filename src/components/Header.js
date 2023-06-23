@@ -23,13 +23,13 @@ const Header = () => {
   
             <ul className="nav_menu">
               <li>
-                <a href="">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="/">Contact</a>
               </li>
               <li>
-                <a href="">About</a>
+                <a href="/">About</a>
               </li>
               <li>
                 <a href="/login">Sign In</a>
@@ -45,10 +45,10 @@ const Header = () => {
                 type="text"
                 placeholder="What are you looking for"
               />
-              <a href="">
+              <a href="/">
                 <FontAwesomeIcon icon={faHeart} className="color1" />
               </a>
-              <a href="">
+              <a href="/">
                 <FontAwesomeIcon
                   icon={faShoppingCart}
                   className="color1"
@@ -57,7 +57,7 @@ const Header = () => {
               </a>
   
               <div className="profile-button">
-                <a href="">
+                <a href="/">
                   <FontAwesomeIcon
                     icon={faUser}
                     className="color1"
@@ -67,7 +67,7 @@ const Header = () => {
   
                 <div className="account-opt">
                   <div className="opt">
-                    <a href="">
+                    <a href="/">
                       <FontAwesomeIcon
                         icon={faUser}
                         className="color1"
@@ -78,7 +78,7 @@ const Header = () => {
                   </div>
   
                   <div className="opt">
-                    <a href="">
+                    <a href="/">
                       <FontAwesomeIcon
                         icon={faUser}
                         className="color1"
@@ -89,7 +89,7 @@ const Header = () => {
                   </div>
   
                   <div className="opt">
-                    <a href="">
+                    <a href="/">
                       <FontAwesomeIcon
                         icon={faUser}
                         className="color1"
@@ -100,7 +100,7 @@ const Header = () => {
                   </div>
   
                   <div className="opt">
-                    <a href="">
+                    <a href="/">
                       <FontAwesomeIcon
                         icon={faUser}
                         className="color1"
@@ -111,7 +111,7 @@ const Header = () => {
                   </div>
   
                   <div className="opt">
-                    <a href="">
+                    <a href="/">
                       <FontAwesomeIcon
                         icon={faUser}
                         className="color1"

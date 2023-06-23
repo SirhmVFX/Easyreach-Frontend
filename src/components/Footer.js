@@ -1,5 +1,5 @@
 import React from "react";
-import '../Easy.css';
+import "../Easy.css";
 import Qrcode from "../images/Qrcode.png";
 import Playstore from "../images/Playstore.png";
 import Appstore from "../images/Appstore.png";
@@ -42,19 +42,19 @@ const Footer = () => {
 
             <ul className="foot-nav">
               <li>
-                <a href="">My Account</a>
+                <a href="/">My Account</a>
               </li>
               <li>
-                <a href="">Login/Register</a>
+                <a href="/">Login/Register</a>
               </li>
               <li>
-                <a href="">Cart</a>
+                <a href="/">Cart</a>
               </li>
               <li>
-                <a href="">Wishlist</a>
+                <a href="/">Wishlist</a>
               </li>
               <li>
-                <a href="">Shop</a>
+                <a href="/">Shop</a>
               </li>
             </ul>
           </div>
@@ -64,16 +64,16 @@ const Footer = () => {
 
             <ul className="foot-nav">
               <li>
-                <a href="">Privacy Policy</a>
+                <a href="/">Privacy Policy</a>
               </li>
               <li>
-                <a href="">Terms Of Use</a>
+                <a href="/">Terms Of Use</a>
               </li>
               <li>
-                <a href="">FAQ</a>
+                <a href="/">FAQ</a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="/">Contact</a>
               </li>
             </ul>
           </div>
@@ -87,16 +87,8 @@ const Footer = () => {
               <img className="gogl" src={Qrcode} alt="" />
 
               <div>
-                <img
-                  className="gog"
-                  src={Playstore}
-                  alt=""
-                />
-                <img
-                  className="gog"
-                  src={Appstore}
-                  alt=""
-                />
+                <img className="gog" src={Playstore} alt="" />
+                <img className="gog" src={Appstore} alt="" />
               </div>
             </div>
           </div>
