@@ -16,7 +16,7 @@ export const signup =
     dispatch({ type: USER_SIGNUP_FAIL, payload: null });
     dispatch({
       type: USER_SIGNUP_REQUEST,
-      payload: { username, email, name, lastName, password },
+      payload: { username, email, name, password },
     });
 
     try {
